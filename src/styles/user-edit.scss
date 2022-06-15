@@ -1,0 +1,22 @@
+@import './custom_colors';
+
+.user-edit{
+    margin: 0;
+    padding: 0;
+    height: calc(100% - 70px);
+    
+
+    .user-menu-lateral{
+        padding: .5em;
+        background-color:  $custom-gray-light;
+
+        ul{
+            li{
+                a{
+                    padding: .5em 1em;
+                }
+                
+            }
+        }
+    }
+}

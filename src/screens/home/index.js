@@ -11,7 +11,7 @@ const HomeScreen = () => (
         <Header/>
         <Section size='medium' className='home'>
             <Container>
-                <ColumnGroup>
+                <Column.Group>
                     <Column size={5}>
                         <Title size={2} spaced className="has-text-white">
                             Crie facilmente suas notas e acesse quando quiser na núvem.
@@ -28,7 +28,7 @@ const HomeScreen = () => (
                     <Column size={6} offset={1}>
                         <img src={presentationImage}/>
                     </Column>
-                </ColumnGroup>
+                </Column.Group>
             </Container>
         </Section>
     </Fragment>

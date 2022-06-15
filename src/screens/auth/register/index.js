@@ -10,10 +10,10 @@ import RegisterForm from '../../../components/auth/register_form';
 const RegisterScreen = ()=>(
     <Fragment>
         <Header/>
-        <Section className="auth" >
+        <Section size='medium' className="auth" >
             <Container>
                 <Column.Group centered>
-                        <Column size={3}>
+                        <Column size={4}>
                             <Card>
                                 <Card.Content>
                                     <Section>
@@ -25,7 +25,7 @@ const RegisterScreen = ()=>(
                                         <Column.Group>
                                             <Column size={12}>
                                                 <Title size={6} className='has-text-gray has-text-cetered' subtitle>
-                                                    Suas notas nas núvens
+                                                    Suas notas na núvem
                                                 </Title>
                                             </Column>
                                         </Column.Group>

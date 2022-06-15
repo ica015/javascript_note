@@ -34,7 +34,7 @@ function RegisterFrom() {
                             <Label size='small'>Name: </Label>
                             <Control>
                                 <Input 
-                                    type="name" 
+                                    type='name'
                                     name='name' 
                                     required
                                     value={name}
@@ -68,8 +68,9 @@ function RegisterFrom() {
                                 <Column.Group breakpoint='mobile'>
                                     <Column>
                                         <a 
-                                        className="button is-white has-text-custom-purple"
-                                        onClick={e => setRedirectToLogin(true)} >Login ou </a>
+                                            className="button is-white has-text-custom-purple"
+                                            onClick={e => setRedirectToLogin(true)} >Login ou 
+                                        </a>
                                     </Column>
                                     <Column>
                                         <Button className="custom-purple" outlined>Registre-se</Button>

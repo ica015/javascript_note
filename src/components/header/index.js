@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Navbar, Container, Column} from 'rbx';
 import logoImage from '../../assets/images/logo.png'
 import { NavbarBurger } from 'rbx/components/navbar/navbar-burger';
@@ -7,6 +7,8 @@ import {Link} from 'react-router-dom';
 import { ColumnGroup } from 'rbx/grid/columns/column-group';
 
 function Header(){
+    const [openMenu, setOpenMenu] = useState(false)
+
     return(
         <Navbar>
             <Container>
