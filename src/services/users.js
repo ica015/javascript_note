@@ -1,3 +1,4 @@
+import API from './api';
 import Api from './api';
 
 const usersService = {
@@ -10,6 +11,24 @@ const usersService = {
     logout: () => {
         localStorage.removeItem('user', null)
         localStorage.removeItem('token', null)
+    },
+    update: async (params) => {
+        const response = await Api.put('/users', params, {
+            headers: { 'x-access-token': localStorage.getItem('token') }
+        })
+        localStorage.setItem('user', JSON.stringify(response.data))
+    },
+    updatePassword: async (params) => {
+        await Api.put("/users/password", params, {
+            headers: { 'x-access-token': localStorage.getItem('token') }
+        })
+    },
+    delete: async () => {
+        await Api.delete('/users', {
+            heaers: { 'x-access-token': localStorage.getItem('token') }
+        })
+        localStorage.removeItem('token', null)
+        localStorage.removeItem('user', null)
     }
 }
 
