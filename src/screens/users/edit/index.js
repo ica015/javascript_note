@@ -4,7 +4,7 @@ import "../../../styles/users.scss";
 import HeaderLogged from "../../../components/header_logged";
 import UsersEditForm from '../../../components/users/user_edit_form';
 import UsersEditFormPassword from '../../../components/users/user_edit_password_form';
-import UsersDelete from '../../../components/users/user_delete/idex';
+import UsersDelete from '../../../components/users/user_delete';
 
 
 const UserEditScreen = () => (

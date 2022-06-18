@@ -7,13 +7,13 @@ function UsersDelete() {
     const [redirectToHome, setRedirectToHome] = useState(false);
 
     const deleteUser = async () => {
-        if (window.confirm('Are you sure you wish to delete this account?')) {
+        if (window.confirm('Tem certeza que deseja excluir sua conta? \nEsta ação  não poderá ser desfeita')) {
             await UsersService.delete()
             setRedirectToHome(true)
         }
     }
 
-    if (redirectToHome == true)
+    if (redirectToHome)
         return <Navigate to={{ pathname: "/" }} />
 
     return (
