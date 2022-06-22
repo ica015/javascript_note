@@ -10,7 +10,7 @@ import RegisterForm from '../../../components/auth/register_form';
 const RegisterScreen = ()=>(
     <Fragment>
         <Header/>
-        <Section size='medium' className="auth" >
+        <Section className="auth" >
             <Container>
                 <Column.Group centered>
                         <Column size={4}>
